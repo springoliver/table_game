@@ -1,0 +1,321 @@
+project title:      Interactive Seating Chart Developer
+project details:
+I'm looking for a skilled developer to create an interactive seating chart. The charts need to be easily navigable, and can be either daisy-chained or non-daisy-chained.
+
+Requirements:
+- Must have multiple charts interconnected ('daisy chain')
+- Must have non-daisy chain charts
+- Must have easy, intuitive movement between charts (click navigation and/or drag-and-drop)
+- Must have options for color-coding and customizable options
+
+Ideal Skills:
+- Experience with interactive UI/UX design
+- Proficiency in web development
+- Strong understanding of user navigation and experience design
+
+Please share any relevant portfolios or past work.
+-------------------------------------------------------------------------------------------------------
+
+Must Move List
+
+Setup
+
+Select number of oval tables to be displayed
+
+Seat have players. Need name and description of player for seat identification
+Must Move Table or Main Game Tables
+
+Ability to label the table and color table name, seat full color and empty color
+type of table. Main M. or. Feeder/Must Move MM
+
+
+Daisy chain style or Multiple main Table with a feeder table Some times two feeder tables. One MM is priority over the other. This can change to a single MM table
+
+Table transfer list. Yes or no
+ability
+
+
+Table set up
+Main game or Feeder
+
+# Seats 2-10
+Names
+Seat number 1-10
+Description of player
+
+
+Must Move Daisey chain
+is to keep the main table full at all time
+Secondary tables feed each other by daisey chain
+
+Table 1 Main
+Table 2 MM
+Table 3 MM
+
+Player on table 1 leaves
+That seat gets fill by table 2
+Table 2 seat gets filled by table 3
+Table 3 gets filled by a waiting list
+
+
+Feeder table to all MAIN games
+Multiple Main games
+feeder tables
+
+Table 1 is Main Game
+Table 2 is Main game
+Table 3 is feeder Table
+Transfer list gets priority over table 3 seat moving
+
+If a player leaves table 1 then table 3 feeds table 2. Exception Transfer list overrides
+A player on Table 2 wishes to move to Table 1 then the feeder fills table 2
+
+When opening up a seat the tables in the must move line should light up with the next player to be moved. Or transfer list if one exists
+
+
+
+Table Template: Oval looking with seats going around table. Like a poker table
+Table #. : Type Main. MM
+
+
+Name of Table Drop Down List: Table # Must Move or Main Game selection:
+Priority move order Player Name Player description seat number. Example Action: Next to Move, leave, transfer list, Flashing highlight when it’s time to move. Colors and flashing designate
+1 5
+2 8
+3 3
+4 5
+5 2
+6 1
+7 4
+8 7
+Actions that can happen. Check mark,
+
+Seat number can be changed but does not change priority order. Seat number cannot be duplicated but highlighted if there is a conflict or missing.
+
+Another action is to put on a separate List or highlighted for a table change when it becomes available and prioritized.
+
+Ability to change the priority order and refresh list
+
+Each table interacts with the other tables as needed.
+6:52
+3:57 PM
+
+D
+Hoping you can help out
+4:11 PM
+
+My notes are in disarray my appologies. I can send an excel to help! if you like
+4:12 PM
+
+please send the excel.
+4:13 PM
+
+D
+Must Move.xlsx
+4:14 PM
+
+Thanks — this is very helpful and much clearer. I understand the main flow now. I may ask a couple small clarifying questions about transfer priority and multiple feeders, but this gives me a solid picture. 👍
+4:18 PM
+
+D
+shoot
+4:19 PM
+
+Great — just two quick questions:
+
+1. Does the transfer list always override the must-move order?
+
+2. If there are two feeder tables, which one has priority to feed first?
+4:24 PM
+
+D
+transfer has first priority before teh must move. up to the player to move or not
+4:26 PM
+
+if two feeder tables then 1st one has priority after a short time the 1st feeder table then becomes a main table leaving one feeder
+4:27 PM
+
+the plo list does not have a transfer list as it is daisy chained
+4:27 PM
+
+needs to be able to override priority or reorganize the priority as mistakes may happen
+4:28 PM
+
+Understood — we’ll make sure priority can be overridden or reordered when needed. That’s helpful to know.
+4:30 PM
+
+Do you have a target budget range in mind so I can align the scope and estimate properly?
+4:31 PM
+
+D
+no budget as this is a personal project depending on the GUI and looks 50-200 is whats on my mind. if it becomes a labor intensive then we can talk more
+4:33 PM
+
+not sure what platform will be best
+4:34 PM
+
+That sounds reasonable. For something in the $50–200 range, we can start with a simple but functional version and scale up if needed. A web app is likely the best platform since it works on tablets and laptops easily. We can refine as we go.
+4:35 PM
+
+D
+would it be dependent on internet connection internet is sketchy at times.
+4:38 PM
+
+It doesn’t have to depend on internet. We can build it to work offline (local storage) and sync when internet is available. That way it’s reliable even with sketchy connection.
+4:41 PM
+
+D
+prefer to be local if possible anyway to do a apnp or in excel or similar
+4:44 PM
+
+Totally doable. We can keep it 100% local — either as an Excel-based tracker (simpler) or a small local app that runs on your laptop with no internet (better GUI and smoother must-move logic). If you want the oval table visuals and flashing highlights, I’d recommend the local app approach.
+4:46 PM
+
+D
+functional is first visual is a luxury. how does a local app work on the ipad or ipad mini. Preferred easy to walk around with.
+4:50 PM
+
+For iPad, true local desktop-style apps are harder unless we build a native iOS app. The simpler option is a web app that runs in the iPad browser and can work offline — that’s usually the most practical. Purely local apps without internet on iPad aren’t ideal to build quickly or cheaply.
+4:53 PM
+
+D
+I have excel on the iPad.
+5:04 PM
+
+Even iPads version of excel
+5:04 PM
+
+Web app in iPad browser is fine. Just worries about glitches is all. But I’m good with that. Simple is the name of the game
+5:06 PM
+
+That makes sense — simple and functional first is a good approach. A web app on iPad should be stable, and we can keep it lightweight to avoid glitches. We can also start very simple and add features later if needed.
+5:10 PM
+--------------------------------------------------------------------------------------------------------------------------------------------
+I like so far. Thumbs up. Good foundation
+
+Feeder and must move are basically the same thing. But different. I know an oxymoron. lol.
+
+Feeder is for non daisey chain How ever called Must Move. Weird I know.
+Must move is for daisey chain .
+
+Both words act as feeders.
+
+
+Transfer list is for non daisey chain lists. tables daisey chain does not have a transfer list.
+
+
+Can we have when you select seat that it opens the seat editor. Rather than the whole table I like the whole table can be Scene and edited
+
+Tweeks
+Seat numbers don’t stop at table seat guidelines table is set for 8 seats but seat numbers go farther than seat number parameters.
+
+Can we put the seat priority order magically reoder according to priority.
+
+How do I remove a player from a table that triggers the actions of other tables to indicate who moves.
+
+How can I get the open seats on the last table to trigger the waiting list selection
+
+How can we stream line this and screens shown
+
+I’m using an iPad and walking around, moving people and little time to input data as action is quick No mouse with me. How can I get it to work on the iPad. I down loaded and opened index Selections did not work.
+
+can the mIn screen shown be far left Tables. Then select
+from there to open the controls in the middle.
+
+Currently when i select open seat it pulls from The waiting list rather than the next table. Daisey chain. It never pulls from the 2nd Table.
+
+Description can be deleted, I can use player name area for description if name is not available. This will safe on space.
+
+also please send me a document, re database implementation, what changed, what has been added, don't want to copy whole database
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This might be an issue. I will not have my laptop or the network to reopen if needed when I’m using the app. Anyway to resolve?
+
+D
+Latest ideas.
+
+how can i reconnect if needed app. If i have to close and reopen. I can turn on internet. For a short period of time but then disconnect. will not be on a network i control. Just simple internet guest wifi.
+
+how do i reopen with data intact
+
+keyboard stopped opening up. I had to completely close the app and clear safari data. Then reopen
+did this twice.
+
+mylaptop will not be with me if i have to reconnect. Thats gonna be an issue.
+
+
+I like the player edit applet Can we do that for the table edit aswell. And can i color the table.
+
+In the seat applet organize the list left tonright by seats priority rather than seat number left to right.
+
+Can we raise the font size for seat names or have a selector. Not a priority for selctor. But a little bigger would help and or font color.
+
+when i select a seat to edit. The cursor goes to the far left of the seat number. Can it gontonthe right of the seat number for ease of edit. Not a priority but a comfort thing.
+
+In the seat applet can we add the priority number. Can adding a plyer name to an open seat also add to the priority order. Players sit in random seats thus priorityborser is not always the same as the seat in the begining
+
+The look of the adding of tables is all I'm looking for Everything under
+The table applet can be removed or moved into appropriate applet. I prefer to only see tables on the main screen. Everything goes in designated applet
+
+When the seats trigger the move can we have it stand out some how. Hard to see or recognise i can see it move correctly just hard to identify.
+
+
+Any way to save data somewhere
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hi. Having some issues.
+4:51 PM
+
+Un stable. At the moment I open program and if it hangs up or closes everything is lost and I’m not able to reopen until I get back to my network. I am not near my network to reopen and then go back to the pen and paper.
+
+Worked at first but after 20min of using the keyboard adding to the waiting list keyboard stopped opening up. Refreshed and hoped it didn’t crash. After a couple of refreshes just stopped working. Not able to close other than swiping up.
+
+main screen shows priority order. Can we show both on the same text box. Either different color. or different designation. Or a selection option?
+
+When performing the move it moves fine but need some sorta indicator to show what just got moved.
+
+Add an Undo button. Undo u/ redo upto last 15 moves
+
+Main Game should not have a priority order. Not a big deal.
+
+When players get moved the priority order on main screen is fine but under the edit table it’s fails and goes by seat number as priority.
+
+saftey message. Reset UI or Clear Data. Accidents happen.
+
+Auto Save. Every. X amount of time Just because of fat fingers.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hi. Have some working issues. Then we can work on the visual side
+9:32 PM
+
+Visual was not apart of the initial request.
+9:34 PM
+
+I think the iPad did an update. Might be causing issues.
+
+table settings change when adding a table. Have to double check table setting on each table when adding.
+
+waiting list is adding to table 1 instead of daisey chain order. main game Instead of last table added in daisy chain
+
+edit table. Main game deignation should not have a feed to selection option. Or. Just go to none as default
+
+sometimes when I remove from seat seat applet freezes. I need to reopen to gain control Works on feeder but stopped on daisy chain
+
+when i hit hit remove on table 2 It’s removing seat on table table 1
+
+if i make changes to a name it resets the priority order on that table
+
+can i get seat and priority on same button. Rather than only on the table edit. I can set with number rather than up arrows
+
+font color label color not working
+
+…
+
+I'm good. Crazy busy. Hope all is good with you.
+
+Ok. I figured out that In the table
+Edit The from and to table selection is just mis worded. It says to when it should say from. Or at least my POV and it works fine. I was using it as going to. Not from.
+
+The biggest challenge is that the priority listing gets reset if I go I table edit and make any changes. Spelling. Seating. Etc. Then the priority gets messed up and have to manually move things around.
+
+Then we can work on the visuals. That was not in the original task request.
+
+Thank You! . Craig
