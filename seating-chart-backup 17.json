@@ -1,0 +1,191 @@
+{
+  "settings": {
+    "mode": "daisy"
+  },
+  "tables": [
+    {
+      "id": "f654f8cf-4836-4830-be12-2c6ebf4e9bc2",
+      "name": "2/2. 5 Card Plo Table 10",
+      "type": "main",
+      "seatsCount": 8,
+      "seats": [
+        {
+          "seatNumber": 1,
+          "player": {
+            "name": "Duracell",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 2,
+          "player": {
+            "name": "Rene V",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 3,
+          "player": {
+            "name": "Ryan T",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 4,
+          "player": {
+            "name": "Daniel U",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 8,
+          "player": {
+            "name": "Brandon S",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 5,
+          "player": {
+            "name": "Arnold",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 7,
+          "player": {
+            "name": "Joseph S",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 6,
+          "player": {
+            "name": "Lucky",
+            "description": ""
+          },
+          "hold": false
+        }
+      ],
+      "priorityOrder": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        6,
+        4
+      ],
+      "colors": {
+        "label": "#e63b7a",
+        "seatFull": "#2ecc71",
+        "seatEmpty": "#fefb41"
+      },
+      "daisyNextId": null,
+      "feederTableId": null
+    },
+    {
+      "id": "6ae207db-497a-4c71-9199-a5819c87b852",
+      "name": "2/2. 5 Card Plo Table 11",
+      "type": "mm",
+      "seatsCount": 8,
+      "seats": [
+        {
+          "seatNumber": 1,
+          "player": {
+            "name": "Jason I",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 2,
+          "player": {
+            "name": "Rich H",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 3,
+          "player": {
+            "name": "Terrance",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 4,
+          "player": {
+            "name": "Ricky",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 5,
+          "player": {
+            "name": "Alex D",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 6,
+          "player": {
+            "name": "A B",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 7,
+          "player": {
+            "name": "Sn",
+            "description": ""
+          },
+          "hold": false
+        },
+        {
+          "seatNumber": 8,
+          "player": {
+            "name": "James P",
+            "description": ""
+          },
+          "hold": false
+        }
+      ],
+      "priorityOrder": [
+        6,
+        0,
+        7,
+        3,
+        5,
+        1,
+        4,
+        2
+      ],
+      "colors": {
+        "label": "#1e2a38",
+        "seatFull": "#2ecc71",
+        "seatEmpty": "#fefb41"
+      },
+      "daisyNextId": "f654f8cf-4836-4830-be12-2c6ebf4e9bc2",
+      "feederTableId": null
+    }
+  ],
+  "waitingList": [],
+  "transferList": [],
+  "selectedTableId": "f654f8cf-4836-4830-be12-2c6ebf4e9bc2",
+  "selectedSeatIndex": null,
+  "modalOpen": false,
+  "tableModalOpen": false
+}
