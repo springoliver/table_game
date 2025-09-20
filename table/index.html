@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Seating Chart</title>
+    <meta name="theme-color" content="#1e2a38" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Interactive Seating Chart</h1>
+        <p class="subtitle">Must-move + feeder workflows (offline-ready)</p>
+      </div>
+      <div class="header-actions">
+        <label class="toggle">
+          <span>Mode</span>
+          <select id="modeSelect">
+            <option value="daisy">Daisy Chain</option>
+            <option value="feeder">Feeder Tables</option>
+          </select>
+        </label>
+        <button id="addTableBtn">Add Table</button>
+        <button id="exportBtn" class="secondary">Export</button>
+        <button id="importBtn" class="secondary">Import</button>
+        <input id="importInput" type="file" accept="application/json" hidden />
+        <button id="resetUiBtn" class="secondary">Reset UI</button>
+        <button id="resetBtn" class="secondary">Reset Data</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <h2>Tables</h2>
+        <div id="tablesContainer" class="tables-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Waiting List</h2>
+        <div id="waitingListContainer"></div>
+        <button id="addWaitingBtn" class="secondary">Add to Waiting List</button>
+      </section>
+
+      <section class="panel">
+        <h2>Transfer List</h2>
+        <div id="transferListContainer"></div>
+        <p class="hint">
+          Transfer entries override must-move order when a seat opens.
+        </p>
+      </section>
+    </main>
+
+    <template id="tableCardTemplate">
+      <div class="table-card">
+        <div class="table-card__header">
+          <div>
+            <h3 class="table-name"></h3>
+            <p class="table-meta"></p>
+          </div>
+          <div class="table-card__actions">
+            <button class="select-table">Edit</button>
+            <button class="remove-table secondary">Remove</button>
+          </div>
+        </div>
+        <div class="seats-preview"></div>
+      </div>
+    </template>
+
+    <template id="editorTemplate">
+      <div class="editor">
+        <div class="editor-header">
+          <label>
+            Table Name
+            <input type="text" class="table-name-input" />
+          </label>
+          <label>
+            Table Type
+            <select class="table-type-input">
+              <option value="main">Main Game</option>
+              <option value="mm">Must Move</option>
+              <option value="feeder">Feeder</option>
+            </select>
+          </label>
+          <label>
+            Seats
+            <select class="seat-count-input">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="color-row">
+          <label>
+            Label Color
+            <input type="color" class="label-color-input" />
+          </label>
+          <label>
+            Seat Filled Color
+            <input type="color" class="seat-full-color-input" />
+          </label>
+          <label>
+            Seat Empty Color
+            <input type="color" class="seat-empty-color-input" />
+          </label>
+        </div>
+
+        <div class="link-row">
+          <label class="daisy-link">
+            Feeds To (Daisy)
+            <select class="daisy-next-input"></select>
+          </label>
+          <label class="feeder-link">
+            Feeder Table (for Main)
+            <select class="feeder-input"></select>
+          </label>
+        </div>
+
+        <h3>Seats</h3>
+        <div class="seat-list"></div>
+
+        <h3>Priority Order</h3>
+        <div class="priority-list"></div>
+      </div>
+    </template>
+
+    <div id="seatModal" class="modal" hidden>
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 id="seatModalTitle">Seat Editor</h3>
+          <button id="seatModalClose" class="secondary">Close</button>
+        </div>
+        <div class="modal__body">
+          <label>
+            Player name / notes
+            <input id="seatModalName" type="text" />
+          </label>
+          <label>
+            Seat number
+            <input id="seatModalNumber" type="number" min="1" />
+          </label>
+          <div id="seatModalPriority" class="seat-modal-meta"></div>
+          <div class="modal__actions">
+            <button id="seatModalHold">Hold</button>
+            <button id="seatModalTransfer" class="secondary">Transfer</button>
+            <button id="seatModalRemove" class="secondary">Remove</button>
+            <button id="seatModalSave">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tableModal" class="modal" hidden>
+      <div class="modal__content modal__content--wide">
+        <div class="modal__header">
+          <h3 id="tableModalTitle">Table Editor</h3>
+          <button id="tableModalClose" class="secondary">Close</button>
+        </div>
+        <div id="tableModalContent" class="modal__body"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
